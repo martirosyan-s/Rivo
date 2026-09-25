@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rivo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container flex justify-between">
+      <a class="logo flex items-center" href="/">
+        <svg class="logo__icon">
+          <use xlink:href="./svg/sprite.svg#logo" />
+        </svg>
+      </a>
+      <nav class="nav flex  items-center  justify-between">
+        <ul class="nav__list reset-list flex">
+          <li class="nav__item flex">
+            <a class="nav__link flex items-center" href="#">HOME</a>
+          </li>
+          <li class="nav__item flex">
+            <a class="nav__link flex items-center" href="#">SHOP</a>
+          </li>
+          <li class="nav__item flex">
+            <a class="nav__link flex items-center" href="#">FEATURES</a>
+          </li>
+          <li class="nav__item flex">
+            <a class="nav__link flex items-center" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <div class="nav__right flex items-center">
+          <a class="nav__link-basket" href="#">
+            <svg class="nav__icon-basket">
+              <use xlink:href="./svg/sprite.svg#basket" />
+            </svg>
+          </a>
+          <button class="nav__button reset-button flex items-center">LOGIN</button>
+
+        </div>
+      </nav>
+      <button onclick="openMenu()" class="burger reset-button flex items-center justify-center">
+        <img width="40" height="40" class="burger__img" src="./img/menu.svg" alt="menu list icon">
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <h2 class="hero__title">Discover and <br> Find Your Own <br> Fashion!</h2>
+          <p class="hero__text text">
+            Explore our curated collection of stylish <br> clothing and accessories tailored to your <br> unique taste.
+          </p>
+          <button class="hero__button reset-button">Explore Now</button>
+        </div>
+        <div class="hero__img-box flex items-center justify-center">
+          <img class="hero__img" src="./img/img-1.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="selling">
+      <div class="selling__container container">
+        <h2 class="selling__title">Best selling</h2>
+        <p class="selling__text text">Get in on the trend with our curated selection of best-selling styles.</p>
+        <ul class="selling__list reset-list">
+          <li class="card">
+            <div class="card__item-img-box card__item-img-box_dark">
+              <img width="320" height="380" class="card__item-img" src="./img/best-selling/1.png" alt="">
+            </div>
+            <h3 class="card__item-title">Regular Fit Long Sleeve Top</h3>
+            <div class="card__item-bottom flex items-center justify-center">
+              <span class="card__item-price">$38.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating flex items-center">5.0
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box card__item-img-box_medium">
+              <img width="320" height="380" class="card__item-img" src="./img/best-selling/2.png" alt="">
+            </div>
+            <h3 class="card__item-title">Black Crop Tailored Jacket</h3>
+            <div class="card__item-bottom flex items-center justify-center">
+              <span class="card__item-price">$62.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating flex items-center">4.9
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box card__item-img-box_light">
+              <img width="320" height="380" class="card__item-img" src="./img/best-selling/3.png" alt="">
+            </div>
+            <h3 class="card__item-title">Textured Sunset Shirt</h3>
+            <div class="card__item-bottom flex items-center justify-center">
+              <span class="card__item-price">$49.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating flex items-center">5.0
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+        </ul>
+        <button class="selling__button reset-button flex items-center justify-center">
+          <span>See all</span>
+          <svg class="selling__button-icon">
+            <use xlink:href="./svg/sprite.svg#arrow" />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="products">
+      <div class="products__container container">
+        <h2 class="products__title">Our products</h2>
+        <ul class="products__tab-list reset-list flex items-center justify-between">
+          <li class="products__tab-item">
+            <button class="products__tab-button reset-button">SALE</button>
+          </li>
+          <li class="products__tab-item">
+            <button class="products__tab-button reset-button">HOT</button>
+          </li>
+          <li class="products__tab-item">
+            <button class="products__tab-button reset-button">NEW ARRIVALS</button>
+          </li>
+          <li class="products__tab-item">
+            <button class="products__tab-button reset-button">ACCESSORIES</button>
+          </li>
+        </ul>
+        <ul class="products__list reset-list">
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/1.png" alt="">
+            </div>
+            <h3 class="card__item-title">Spread Collar Shirt</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$48.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">5.0
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/2.png" alt="">
+            </div>
+            <h3 class="card__item-title">White Solid Formal Shirt</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$39.00</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">4.9
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/3.png" alt="">
+            </div>
+            <h3 class="card__item-title">Shine On Me Blouse</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$42.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">4.8
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/4.png" alt="">
+            </div>
+            <h3 class="card__item-title">Gray Solid Padded Jacket</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$32.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">4.7
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/5.png" alt="">
+            </div>
+            <h3 class="card__item-title">Printed Loose T-shirt</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$39.99</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">5.0
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/6.png" alt="">
+            </div>
+            <h3 class="card__item-title">Summer Wind Crop Shirt</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$39.95</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">4.7
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/7.png" alt="">
+            </div>
+            <h3 class="card__item-title">Tailored Jacket</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$46.00</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">4.9
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+          <li class="card">
+            <div class="card__item-img-box">
+              <img width="320" height="380" class="card__item-img" src="./img/our-products/8.png" alt="">
+            </div>
+            <h3 class="card__item-title">Solid Round Neck T-shirt</h3>
+            <div class="card__item-bottom">
+              <span class="card__item-price">$36.00</span>
+              <span class="card__item-line">|</span>
+              <span class="card__item-rating">5.0
+                <svg class="card__item-rating-icon">
+                  <use xlink:href="./svg/sprite.svg#star" />
+                </svg>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="offer">
+      <div class="offer__container container flex items-center">
+        <div class="offer__img-box flex">
+          <img class="offer__img" src="./img/offer/1.png" alt="">
+        </div>
+        <div class="offer__content">
+          <h2 class="offer__title">Exclusive offer</h2>
+          <p class="offer__text text">
+            Unlock the ultimate style upgrade with our exclusive <br>
+            offer Enjoy savings of up to 40% off on our latest New <br>
+            Arrivals
+          </p>
+          <ul class="offer__time-list reset-list flex items-center">
+            <li class="offer__time-item flex items-center justify-center">
+              <span class="offer__time-item-day">06</span>
+              <span class="offer__time-item-day-name">days</span>
+            </li>
+            <li class="offer__time-item flex items-center justify-center">
+              <span class="offer__time-item-day">18</span>
+              <span class="offer__time-item-day-name">hours</span>
+            </li>
+            <li class="offer__time-item flex items-center justify-center">
+              <span class="offer__time-item-day">48</span>
+              <span class="offer__time-item-day-name">min</span>
+            </li>
+          </ul>
+          <button class="offer__button reset-button">BUY NOW</button>
+        </div>
+      </div>
+    </section>
+    <section class="designer">
+      <div class="designer__container container">
+        <h2 class="designer__title">Designer Clothes For You</h2>
+        <p class="designer__text text">Immerse yourself in the world of luxury fashion with our meticulously crafted
+          designer clothes!</p>
+        <ul class="designer__list reset-list">
+          <li class="designer__item">
+            <div class="designer__item-box designer__item-box_first">
+              <img width="406" height="534" class="designer__item-img" src="./img/best-selling/1.png" alt="">
+            </div>
+            <h3 class="designer__item-title">Accessories</h3>
+            <p class="designer__item-text text">
+              Complete your ensemble with <br>
+              designer accessories such as <br>
+              handbags, scarves, belts, and hats.
+            </p>
+          </li>
+          <li class="designer__item">
+            <div class="designer__item-box designer__item-box_second">
+              <img width="406" height="534" class="designer__item-img" src="./img/best-selling/2.png" alt="">
+            </div>
+            <h3 class="designer__item-title">Dresses</h3>
+            <p class="designer__item-text text">
+              Explore a stunning range of designer <br>
+              dresses, including evening gowns <br>
+              and chic day dresses.
+            </p>
+          </li>
+          <li class="designer__item">
+            <div class="designer__item-box designer__item-box_third">
+              <img width="406" height="534" class="designer__item-img" src="./img/best-selling/3.png" alt="">
+            </div>
+            <h3 class="designer__item-title">Outerwear</h3>
+            <p class="designer__item-text text">
+              Browse luxurious designer coats, <br>
+              jackets, and blazers to stay stylishly <br>
+              warm during colder seasons.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="feedback__container container">
+        <h2 class="feedback__title">Feedback Corner</h2>
+        <ul class="feedback__list reset-list">
+          <li class="feedback__item">
+            <svg class="feadback__item-icon">
+              <use xlink:href="./svg/sprite.svg#quote" />
+            </svg>
+            <span class="feedback__item-name">Emily Wilson</span>
+            <blockquote class="feedback__item-text text">
+              The customer experience was exceptional from start to finish. The website is user-friendly, the checkout
+              process was smooth, and the clothes I ordered fit perfectly. I'm beyond satisfied!
+            </blockquote>
+          </li>
+          <li class="feedback__item">
+            <svg class="feadback__item-icon">
+              <use xlink:href="./svg/sprite.svg#quote" />
+            </svg>
+            <span class="feedback__item-name">Sarah Thompson</span>
+            <blockquote class="feedback__item-text text">
+              I absolutely love the quality and style of the clothing I purchased from this website. customer service
+              was outstanding, and I received my order quickly. Highly recommended!
+            </blockquote>
+          </li>
+          <li class="feedback__item">
+            <svg class="feadback__item-icon">
+              <use xlink:href="./svg/sprite.svg#quote" />
+            </svg>
+            <span class="feedback__item-name">Olivia Martinez</span>
+            <blockquote class="feedback__item-text text">
+              I had a great experience shopping on this website. The clothes I bought are fashionable and comfortable.
+              Highly satisfied!
+            </blockquote>
+          </li>
+        </ul>
+        <div class="feedback__buttons flex items-center justify-center">
+          <button class="feedback__btn reset-button flex items-center justify-center">
+            <svg class="feadback__btn-icon feadback__btn-icon_left">
+              <use xlink:href="./svg/sprite.svg#chevron-x" />
+            </svg>
+          </button>
+          <button class="feedback__btn reset-button flex items-center justify-center">
+            <svg class="feadback__btn-icon">
+              <use xlink:href="./svg/sprite.svg#chevron-x" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer flex">
+    <div class="footer__container container flex">
+      <div class="footer__content flex justify-between">
+        <div class="footer__logo-box">
+          <a class="logo footer__logo" href="/">
+            <svg class="logo__icon">
+              <use xlink:href="./svg/sprite.svg#logo" />
+            </svg>
+          </a>
+          <h3 class="footer__logo-box-title">Social Media</h3>
+          <nav class="footer__social-nav">
+            <ul class="footer__social-list reset-list flex">
+              <li>
+                <a href="#">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./svg/sprite.svg#facebook" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./svg/sprite.svg#twitter" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="footer__social-icon">
+                    <use xlink:href="./svg/sprite.svg#instagram" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__columns footer__columns_desktop flex justify-between">
+          <div class="footer__column footer__column_shop">
+            <h3 class="footer__column-title">SHOP</h3>
+            <ul class="footer__column-list reset-list">
+              <li>
+                <a class="footer__column-link" href="#">Products</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Pricing</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Releases</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_company">
+            <h3 class="footer__column-title">COMPANY</h3>
+            <ul class="footer__column-list reset-list">
+              <li>
+                <a class="footer__column-link" href="#">About us</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Contact</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">News</a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">Support</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column footer__column_form">
+            <h3 class="footer__column-title">Stay up to date</h3>
+            <form class="footer__form flex">
+              <input class="footer__form-input" placeholder="Enter your email" type="email" name="subscribe">
+              <button class="footer__form-button reset-button">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom flex items-center">
+        <ul class="footer__bottom-list reset-list flex">
+          <li>
+            <a class="footer__bottom-link" href="#">Terms</a>
+          </li>
+          <li>
+            <a class="footer__bottom-link" href="#">Privacy</a>
+          </li>
+          <li>
+            <a class="footer__bottom-link" href="#">Cookies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
